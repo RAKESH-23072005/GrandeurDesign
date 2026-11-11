@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="studioGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f7f2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2f0e7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#studioGrad)"/>
+  <rect x="100" y="150" width="200" height="350" fill="#6fae85" opacity="0.3"/>
+  <rect x="150" y="200" width="150" height="250" fill="#c8e3d2" opacity="0.5"/>
+  <rect x="350" y="100" width="300" height="400" fill="#3f7d58" opacity="0.2"/>
+  <rect x="400" y="150" width="200" height="300" fill="#a9d5b8" opacity="0.4"/>
+  <rect x="550" y="200" width="150" height="250" fill="#6fae85" opacity="0.3"/>
+  <circle cx="200" cy="100" r="50" fill="#1f3d2b" opacity="0.1"/>
+  <circle cx="600" cy="400" r="80" fill="#3f7d58" opacity="0.15"/>
+  <rect x="250" y="450" width="300" height="100" fill="#1f3d2b" opacity="0.1"/>
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="36" fill="#1f3d2b" opacity="0.3" text-anchor="middle">STUDIO SPACE</text>
+</svg>

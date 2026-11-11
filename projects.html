@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects Portfolio — The Grandeur Design, Coimbatore</title>
+  <meta name="description" content="Filterable portfolio of residence, office, cafe, hospital, commercial and industrial projects by The Grandeur Design.">
+  <link rel="canonical" href="https://www.grandeurdesign.in/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects Portfolio — The Grandeur Design, Coimbatore">
+  <meta property="og:description" content="Filterable portfolio of residence, office, cafe, hospital, commercial and industrial projects by The Grandeur Design.">
+  <meta property="og:image" content="assets/images/hero.svg">
+  <meta property="og:url" content="https://www.grandeurdesign.in/">
+  <!-- LocalBusiness / Architect schema (placeholders — verify before launch) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ArchitecturalDesignOrganization",
+    "name": "The Grandeur Design",
+    "url": "https://www.grandeurdesign.in/",
+    "telephone": "+91 99525 44586",
+    "email": "thegrandeurdesign@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "60/45, Mecrikar Road, R.S. Puram",
+      "addressLocality": "Coimbatore",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "641002",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+  <!-- Fonts (optional — graceful fallback to system serif/sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div data-include="components/header.html"></div>
+
+  <header class="gd-page-hero">
+    <div class="container">
+      <span class="gd-eyebrow">Portfolio</span>
+      <h1 class="gd-display" style="font-size:clamp(2.2rem,4.5vw,3.6rem)">Our Projects</h1>
+      <p class="gd-lead mt-3">A selection of our work across residences, offices, hospitality, healthcare, commercial and industrial spaces. Click any project to view details.</p>
+    </div>
+  </header>
+
+  <section class="gd-section">
+    <div class="container">
+      <div class="gd-filter-bar" role="group" aria-label="Filter projects by category">
+        <button class="gd-filter-btn active" data-filter="All">All</button>
+        <button class="gd-filter-btn" data-filter="Residence">Residence</button>
+        <button class="gd-filter-btn" data-filter="Office">Office</button>
+        <button class="gd-filter-btn" data-filter="Cafe">Caf&eacute; / Restaurant</button>
+        <button class="gd-filter-btn" data-filter="Hospital">Hospital</button>
+        <button class="gd-filter-btn" data-filter="Hotel">Hotel</button>
+        <button class="gd-filter-btn" data-filter="Commercial">Commercial</button>
+        <button class="gd-filter-btn" data-filter="Industrial">Industrial</button>
+      </div>
+      <p id="gd-project-count" class="gd-stat-note text-start mb-4" aria-live="polite"></p>
+      <div class="row g-4" id="gd-project-grid"><!-- projects rendered by main.js from projects-data.js --></div>
+    </div>
+  </section>
+
+  <div data-include="components/footer.html"></div>
+
+  <!-- Bootstrap 5 + jQuery (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/projects-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/jquery-custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="residenceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f7f2;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e2f0e7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4e8dd;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#residenceGrad)"/>
+  <rect x="100" y="50" width="300" height="450" fill="#6fae85" opacity="0.2"/>
+  <rect x="150" y="100" width="200" height="350" fill="#a9d5b8" opacity="0.35"/>
+  <rect x="450" y="100" width="300" height="400" fill="#3f7d58" opacity="0.15"/>
+  <rect x="500" y="150" width="200" height="300" fill="#c8e3d2" opacity="0.45"/>
+  <rect x="200" y="400" width="400" height="150" fill="#1f3d2b" opacity="0.1"/>
+  <rect x="250" y="420" width="100" height="100" fill="#6fae85" opacity="0.25"/>
+  <rect x="400" y="420" width="100" height="100" fill="#a9d5b8" opacity="0.3"/>
+  <rect x="550" y="420" width="100" height="100" fill="#c8e3d2" opacity="0.35"/>
+  <circle cx="700" cy="150" r="50" fill="#3f7d58" opacity="0.2"/>
+  <text x="400" y="280" font-family="Arial, sans-serif" font-size="32" fill="#1f3d2b" opacity="0.35" text-anchor="middle">VSV DHANAPAL</text>
+  <text x="400" y="320" font-family="Arial, sans-serif" font-size="18" fill="#3f7d58" opacity="0.4" text-anchor="middle">Residence Interior</text>
+</svg>

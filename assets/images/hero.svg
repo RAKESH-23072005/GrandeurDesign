@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f7f2;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e2f0e7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c8e3d2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6fae85;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#3f7d58;stop-opacity:0.5" />
+    </linearGradient>
+  </defs>
+  <rect width="2000" height="1200" fill="url(#grad1)"/>
+  <rect x="200" y="300" width="600" height="800" fill="url(#grad2)" opacity="0.6"/>
+  <rect x="500" y="400" width="500" height="700" fill="url(#grad2)" opacity="0.5"/>
+  <rect x="800" y="200" width="600" height="900" fill="url(#grad2)" opacity="0.4"/>
+  <rect x="1200" y="350" width="550" height="750" fill="url(#grad2)" opacity="0.5"/>
+  <rect x="300" y="200" width="400" height="300" fill="#6fae85" opacity="0.2"/>
+  <rect x="900" y="100" width="500" height="200" fill="#3f7d58" opacity="0.15"/>
+  <rect x="1400" y="500" width="300" height="400" fill="#1f3d2b" opacity="0.1"/>
+  <circle cx="1600" cy="200" r="150" fill="#a9d5b8" opacity="0.3"/>
+  <circle cx="400" cy="1000" r="100" fill="#c8e3d2" opacity="0.5"/>
+  <text x="1000" y="600" font-family="Arial, sans-serif" font-size="80" fill="#1f3d2b" opacity="0.2" text-anchor="middle">THE GRANDEUR DESIGN</text>
+  <text x="1000" y="700" font-family="Arial, sans-serif" font-size="40" fill="#3f7d58" opacity="0.3" text-anchor="middle">Architecture • Planning • Interiors</text>
+</svg>

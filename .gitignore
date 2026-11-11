@@ -1,0 +1,71 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE and Editor Files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*~
+
+# Dependencies & Package Managers (if Node/frontend tooling is introduced)
+node_modules/
+jspm_packages/
+web_modules/
+
+# Logs and Debugging
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# Temporary & Build Outputs
+dist/
+build/
+out/
+.cache/
+.temp/
+temp/
+tmp/
+
+# Python Local Server Artifacts (e.g. python -m http.server)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env/
+
+# Archives and Backups
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.bak
+*.orig
+
