@@ -69,3 +69,8 @@ env/
 *.bak
 *.orig
 
+# Internal documentation, automation workflows & agent skills
+docs/
+QUICK_N8N_SETUP.md
+n8n-workflow-template.json
+.agents/

@@ -29,8 +29,14 @@ $(function () {
             var path = (location.pathname.split("/").pop() || "index.html").toLowerCase();
             if (href === path || (path === "" && href === "index.html")) $(this).addClass("active");
           });
-          $(".navbar-toggler").on("click", function () {
-            $(this).toggleClass("gd-open");
+
+          /* Close mobile navbar when link is clicked */
+          $(document).on("click", "#gdNav .nav-link, #gdNav .btn-gd-outline", function () {
+            var navCollapse = document.getElementById("gdNav");
+            if (navCollapse && navCollapse.classList.contains("show") && typeof bootstrap !== "undefined") {
+              var instance = bootstrap.Collapse.getInstance(navCollapse) || new bootstrap.Collapse(navCollapse, { toggle: false });
+              instance.hide();
+            }
           });
         }
       });
@@ -38,11 +44,13 @@ $(function () {
   }
 
   /* ---------- Smooth anchor scroll ---------- */
-  $('a[href^="#"]').on("click", function (e) {
-    var target = $($(this).attr("href"));
+  $(document).on("click", 'a[href^="#"]', function (e) {
+    var href = $(this).attr("href");
+    if (!href || href === "#") return;
+    var target = $(href);
     if (target.length) {
       e.preventDefault();
-      $("html, body").animate({ scrollTop: target.offset().top - 90 }, 600);
+      $("html, body").animate({ scrollTop: target.offset().top - 80 }, 500);
     }
   });
 

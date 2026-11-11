@@ -20,7 +20,7 @@
     whatsappNumber: "919952544586",
     whatsappPrefillMessage: "Hello The Grandeur Design, I would like to discuss a project.",
 
-    phoneDisplay: "",
+    phoneDisplay: "+91 99525 44586",
     phoneTel: "+91 99525 44586",
     email: "thegrandeurdesign@gmail.com"
   };
@@ -158,6 +158,28 @@
       if (e.key === "ArrowLeft") stepLb(-1);
       if (e.key === "ArrowRight") stepLb(1);
     });
+
+    /* Touch swipe gesture for mobile (Apple fluid gestures) */
+    let touchStartX = 0, touchStartY = 0;
+    lb.addEventListener("touchstart", e => {
+      if (e.touches.length === 1) {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+      }
+    }, { passive: true });
+    lb.addEventListener("touchend", e => {
+      if (e.changedTouches.length === 1) {
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        const dy = e.changedTouches[0].clientY - touchStartY;
+        if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+          if (dx < 0) stepLb(1); // Swipe left -> next
+          else stepLb(-1);        // Swipe right -> prev
+        } else if (dy > 60 && Math.abs(dy) > Math.abs(dx)) {
+          closeLb();              // Swipe down -> dismiss
+        }
+      }
+    }, { passive: true });
+
     document.querySelectorAll("#gd-pd-gallery .gd-gallery-item img, .gd-lightbox-source img").forEach((img, i, all) => {
       img.closest(".gd-gallery-item, .gd-lightbox-source").addEventListener("click", () => {
         lbList = Array.from(all).map(x => x.src);
