@@ -25,6 +25,8 @@ desktop.ini
 node_modules/
 jspm_packages/
 web_modules/
+docs/
+
 
 # Logs and Debugging
 logs/
@@ -69,8 +71,7 @@ env/
 *.bak
 *.orig
 
-# Internal documentation, automation workflows & agent skills
-docs/
+# n8n
 QUICK_N8N_SETUP.md
 n8n-workflow-template.json
 .agents/
