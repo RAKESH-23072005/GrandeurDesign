@@ -20,9 +20,9 @@
     whatsappNumber: "916383116616",
     whatsappPrefillMessage: "Hello The Grandeur Design, I would like to discuss a project.",
 
-    phoneDisplay: "+91 63831 16616",
-    phoneTel: "+916383116616",
-    email: "kishorerakesh13@gmail.com"
+    phoneDisplay: "",
+    phoneTel: "+91 99525 44586",
+    email: "thegrandeurdesign@gmail.com"
   };
   window.GD_CONFIG = GD_CONFIG;
 
@@ -128,7 +128,7 @@
           <div class="col-lg-8">
             <p class="gd-lead">${p.description}</p>
             ${p.description.indexOf("[Client-approved") !== -1
-              ? '<p class="gd-stat-note text-start">This description is a client-confirmation placeholder. Replace it with the approved project story before launch.</p>' : ''}
+          ? '<p class="gd-stat-note text-start">This description is a client-confirmation placeholder. Replace it with the approved project story before launch.</p>' : ''}
           </div>
           <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
             <a class="btn-gd" href="contact.html">Start a Similar Project</a>

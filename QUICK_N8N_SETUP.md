@@ -44,7 +44,7 @@ n8nWebhookUrl: "https://your-n8n-instance/webhook/grandeur-enquiry"
 **Node 2: Send Email (Gmail)**
 - Add Gmail node
 - Authenticate with your Google account
-- To: kishorerakesh13@gmail.com
+- To: thegrandeurdesign@gmail.com
 - Subject: "New Enquiry from {{ $json.name }}"
 - Body: Include all form fields
 
@@ -81,7 +81,7 @@ n8nWebhookUrl: "https://your-n8n-instance/webhook/grandeur-enquiry"
 2. Go to your website contact form
 3. Fill and submit the form
 4. Check:
-   - Email received at kishorerakesh13@gmail.com
+   - Email received at thegrandeurdesign@gmail.com
    - WhatsApp message received at 6383116616
    - Success message on website
 
