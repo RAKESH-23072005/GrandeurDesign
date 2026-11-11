@@ -17,7 +17,7 @@
     // n8n webhook URL (for production use - set up n8n automation)
     n8nWebhookUrl: "https://YOUR-N8N-INSTANCE/webhook/grandeur-enquiry",
 
-    whatsappNumber: "916383116616",
+    whatsappNumber: "919952544586",
     whatsappPrefillMessage: "Hello The Grandeur Design, I would like to discuss a project.",
 
     phoneDisplay: "",
